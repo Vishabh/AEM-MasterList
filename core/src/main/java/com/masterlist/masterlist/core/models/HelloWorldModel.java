@@ -15,7 +15,7 @@
  */
 package com.masterlist.masterlist.core.models;
 
-//import javax.annotation.PostConstruct;
+import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -36,12 +36,11 @@ public class HelloWorldModel {
 
     private String message;
 
-//    @PostConstruct
+    @PostConstruct
     protected void init() {
-      /*  message = "\tHello World!\n";
+        message = "\tHello World!\n";
         message += "\tThis is instance: " + settings.getSlingId() + "\n";
-        message += "\tResource type is: " + resourceType + "\n";*/
-    	message = "First OSGi Bundle.";
+        message += "\tResource type is: " + resourceType + "\n";
     }
 
     public String getMessage() {
